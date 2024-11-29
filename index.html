@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">MRV Tabacaria</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="carrinho.html">Carrinho (<span id="carrinho-count">0</span>)</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner com Slider -->
+    <section class="banner">
+        <div class="slider">
+            <div class="slide" style="background: url('imagens/banner1.jpg') no-repeat center/cover;">
+                <h2>Bem-vindo à nossa loja!</h2>
+                <p>Os melhores produtos pelos melhores preços. Aproveite!</p>
+            </div>
+            <div class="slide" style="background: url('imagens/banner2.jpg') no-repeat center/cover;">
+                <h2>Novidades Exclusivas</h2>
+                <p>Produtos incríveis para você.</p>
+            </div>
+            <div class="slide" style="background: url('imagens/banner3.jpg') no-repeat center/cover;">
+                <h2>Frete Grátis</h2>
+                <p>Para compras acima de R$ 200,00!</p>
+            </div>
+        </div>
+        <button id="prev">Anterior</button>
+        <button id="next">Próximo</button>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="produtos-destaque">
+        <div class="container">
+            <h2>Produtos em Destaque</h2>
+            <div class="produtos">
+                <!-- Os produtos são renderizados pelo JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MRV Tabacaria. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

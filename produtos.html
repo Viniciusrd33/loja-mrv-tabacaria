@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - Minha Loja Virtual</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">MRV Tabacaria</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html" class="active">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho (<span id="carrinho-count">0</span>)</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Barra de Pesquisa -->
+  <section class="pesquisa">
+    <div class="container">
+      <input type="text" id="barra-pesquisa" placeholder="Buscar produtos...">
+    </div>
+  </section>
+
+  <!-- Listagem de Produtos -->
+  <section class="listagem-produtos">
+    <div class="container">
+      <h2>Produtos Disponíveis</h2>
+      <div class="produtos">
+        <!-- Produtos serão renderizados aqui -->
+      </div>
+      <div class="paginacao">
+        <!-- Botões de paginação serão renderizados aqui -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 MRV Tabacaria. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

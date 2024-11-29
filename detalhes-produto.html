@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Produto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">MRV Tabacaria</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho (<span id="carrinho-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Detalhes do Produto -->
+  <section class="detalhes-produto">
+    <div class="container">
+      <div class="produto-detalhe">
+        <img id="produto-imagem" src="imagens/produto1.jpg" alt="Produto">
+        <div class="info-detalhe">
+          <h2 id="produto-nome"></h2>
+          <p id="produto-descricao"></p>
+          <p id="produto-preco"></p>
+          <div class="variacoes">
+            <label for="cor">Cor:</label>
+            <select id="cor">
+              <option value="Vermelho">Vermelho</option>
+              <option value="Azul">Azul</option>
+              <option value="Preto">Preto</option>
+            </select>
+            <label for="tamanho">Tamanho:</label>
+            <select id="tamanho">
+              <option value="P">P</option>
+              <option value="M">M</option>
+              <option value="G">G</option>
+            </select>
+          </div>
+          <button id="adicionar-carrinho" class="btn">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="avaliacoes">
+    <h3>Avaliações</h3>
+    <div id="lista-avaliacoes"></div>
+    <form id="form-avaliacao">
+      <input type="text" id="usuario" placeholder="Seu Nome" required>
+      <textarea id="comentario" placeholder="Seu Comentário" required></textarea>
+      <label for="nota">Nota:</label>
+      <select id="nota" required>
+        <option value="5">5 - Excelente</option>
+        <option value="4">4 - Bom</option>
+        <option value="3">3 - Regular</option>
+        <option value="2">2 - Ruim</option>
+        <option value="1">1 - Péssimo</option>
+      </select>
+      <button type="submit" class="btn">Enviar Avaliação</button>
+    </form>
+  </section>
+
+  <!-- Produtos Relacionados -->
+  <section class="produtos-relacionados">
+    <h3>Produtos Relacionados</h3>
+    <div id="relacionados"></div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 MRV Tabacaria. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
